@@ -1,0 +1,16 @@
+function f1(){
+    console.log("Estoy en f1");
+    f2();
+    console.log("Estoy al final de f1");
+}
+function f2(){
+    console.log("Estoy en f2");
+    f3();
+    console.log("Estoy al final de f2");
+}
+function f3(){
+    console.log("Estoy en f3");
+}
+console.log("Inicio");
+f1();
+console.log("fin");
