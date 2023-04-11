@@ -1,0 +1,14 @@
+.verde 
+{
+    border-color: green;
+}
+
+table, th, td{
+    border: 1px solid black;
+    
+}
+
+#tablaMaterias{
+    border-color: blue;
+}
+
