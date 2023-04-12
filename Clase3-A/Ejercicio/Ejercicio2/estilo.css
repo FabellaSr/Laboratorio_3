@@ -1,0 +1,22 @@
+table, th, td{
+    border: 1px solid black;
+    
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding-left: 10px,20px;
+    text-align: center;
+    
+}
+tr
+{
+    height: 40px;
+     
+}
+#tablaMaterias{
+    border-color: blue;
+    height: 50px;
+    width: 100px;
+}

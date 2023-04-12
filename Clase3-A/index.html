@@ -16,26 +16,29 @@
                 <th>Martes</th>
                 <th>Miercoles</th>
                 <th>Jueves</th>
-                
+
                 <th>Viernes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Programacion III</td>
+                <!-- rowspan extiende la columna hacia abajo cuantos lugares le indique -->
+                <td rowspan="2">Programacion III</td>
                 <td>Laboratorio III</td>
                 <td>Matematica</td>
                 <td>Libre</td>
                 <td>Matematica/Ingles</td>
             </tr>
             <tr>
-                <td>Programacion III</td>
+                <!-- <td>Programacion III</td> -->             
                 <td>Laboratorio III</td>
-                <td>Matematica</td>
-                <td>Libre</td>
+                <td colspan="2">Matematica</td>                
                 <td>Matematica/Ingles</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr><td colspan="5">Horario 24/7</td></tr>
+        </tfoot>
     </table>
     
 </body>

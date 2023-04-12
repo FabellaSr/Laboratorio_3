@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lineas y columnas</h1>    
+    <table id="tablaMaterias" class="verde"> 
+        <thead>
+            <th>C1</th>
+            <th>C2</th>
+            <th>C3</th>
+            <th>C4</th>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowspan extiende la columna hacia abajo cuantos lugares le indique -->
+                <td colspan="3">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td colspan="2">D</td>                
+                <td>E</td>
+            </tr>
+
+            <tr>    
+                <td colspan="4">F</td>
+            </tr>
+
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+                <td>J</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
