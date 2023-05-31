@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./jobs/scripts.js" defer type="module"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>SuperHeroes</title>
+  </head>
+  <body>
+    <section class="seccion-header">        
+      <header>
+        <div class="icono">
+            <img src="./img/superheroe.png" alt="">
+        </div>  
+          <nav>
+            <ul>
+              <!--  li*4>a{$}  -->
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">Personajes</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>     
+      </header>  
+    </section>
+    <main>     
+      <section class="seccion-formulario">        
+        <form>    
+            <fieldset class="fieldset">
+                <h1>Informcion del SuperHeroe</h1>
+                <p>
+
+                    <h2>Nombre:</h2> 
+                    <input type="text" name="txtNombre" placeholder="nombre" required />         
+                </p>  
+                <p>
+                    <div>
+                        <img src="./img/alias.png" alt="icono seg" />
+                    </div>
+                      <h2>Alias</h2>
+                      <input type="text" name="txtAlias" placeholder="Alias"required />
+                  </p>   
+                <p class="editorial">
+                  <div>
+                    <img src="./img/Editorial.png" alt="icono seg" />
+                  </div>
+                    <h2 >Editorial:</h2>     
+                    <div>
+                        <img src="./img/marvel.png" alt="icono seg" />
+                      </div>            
+                     Marvel<input type="radio" name="rdoEditorial" value="Marvel" checked />                
+                     <div>
+                        <img src="./img/batman.png" alt="icono seg" />
+                      </div>   
+                     DC   <input type="radio"name="rdoEditorial" value="DC" />               
+                </p> 
+                <p>
+                    <div>
+                        <img src="./img/fuerza.png" alt="icono seg" />
+                      </div>
+                    <h2>Fuerza:</h2>
+                    <input type="range" name="rngFuerza" min="0" max="100" value="50" />
+                </p>
+                <p>
+                    <div>
+                        <img src="./img/ballesta.png" alt="icono seg" />
+                    </div>
+                    <h2>Arma:</h2>
+                        <select id="idArmas" name="selArma">Armas
+                    </select>
+                </p>    
+                <button class="guardar" type="submit" value="Guardar" >Guardar</button>
+                <div class="eliminarCancelar">
+                  <button id="eliminar" type="button" value="Eliminar personajes">Eliminar</button>              
+                  <button id="cancelar" type="reset" value="Cancelar">Cancelar</button>
+                  <input type="hidden"name="txtId"/>              
+                </div>
+            </fieldset>             
+            <div id="spinner" class="spinner"></div>         
+        </form>
+        <div id="tabla"></div>   
+
+    </main>
+  </body>
+  <footer>
+    <div class="footerIzq">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footerDer">
+      <p>Laboratorio III Todos los derechos reservados&copy; </p>
+    </div>
+  </footer>
+</html>

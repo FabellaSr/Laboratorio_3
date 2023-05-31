@@ -1,0 +1,77 @@
+.seccion-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.fieldset{
+    border-radius: 10px;
+    width: 500px;
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+    padding:5px 10px;
+}
+/*********************Botones****************/
+#eliminar{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+}
+.eliminarCancelar {
+display: none;
+}
+.guardar {
+background-color: green;
+color: white;
+}
+.eliminarCancelarVisible {
+display: inline-block;
+color: white;
+}
+#cancelar{
+display: inline-block;
+background-color: orangered;
+color: white;
+}
+
+/******************Form**********************/
+legend{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+p,input{
+    background-color:lightgray;
+    border-radius: 5px;   
+    width: 500px;
+}
+.rowPar{
+    background-color: #ddd;
+}
+
+/******************sniper***************************/
+.rotar-45{
+    transform: rotate(45deg);
+
+}
+.rotar-120{
+    transform: rotate(120deg);
+
+}
+.sniperNoVisible{
+    display: none;
+    position: fixed
+}
+.sniperVisible{
+    display: block;
+    position: fixed
+}

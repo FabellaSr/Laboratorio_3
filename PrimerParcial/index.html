@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./jobs/scripts.js" defer type="module"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>     
+      <section class="seccion-formulario">
+        <h1>Llena el formulario de alta</h1>
+        <form>    
+            <fieldset class="fieldset">
+                <legend>Informacion Del Anuncio</legend>
+                <p>
+                    <h2>Titulo:</h2>
+                    <input type="text" name="txtTitulo" placeholder="Título" required />
+                </p>     
+                <p class="transaccion">
+                    <h2 >Transaccion:</h2>                 
+                    Venta<input type="radio" name="rdoTransaccion" value="Venta" checked />                
+                    Alquiler <input type="radio"name="rdoTransaccion" value="Alquiler" />               
+                </p>     
+                <p>
+                    <h2>Descripcion</h2>
+                    <input type="text" name="txtDescr" placeholder="Descripción"required />
+                </p>
+                <p>      
+                    <h2>Precio</h2>
+                    <input type="number" name="txtPrecio" placeholder="Precio" required />
+                </p>
+                <p>      
+                    <h2>Cantidad de baños</h2>
+                    <input type="number" name="txtBaño" placeholder="Baños" required />
+                </p>
+                <p>      
+                    <h2>Cantidad de Autos</h2>
+                    <input type="number" name="txtAutos" placeholder="Autos" required />
+                </p> 
+                <p>      
+                    <h2>Cantidad de Dormitorios</h2>
+                    <input type="number" name="txtDormis" placeholder="Dormitorios" required />
+                </p>  
+            </fieldset>   
+            <button class="guardar" type="submit" value="Guardar" >Guardar</button>
+            <div class="eliminarCancelar">
+              <button id="eliminar" type="button" value="Eliminar anuncio">Eliminar</button>              
+              <button id="cancelar" type="reset" value="Cancelar">Cancelar</button>
+              <input type="hidden"name="txtId"/>     
+            </div>
+            <figure class="sniperNoVisible" >
+              <img id="id" src="./image/cargador.png" alt="" >  
+            </figure>
+ 
+        </form>
+        <h2>Lista Anuncios</h2>
+        <div id="tabla"></div>      
+    </main>
+  </body>
+</html>
